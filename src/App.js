@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './App.css';
-import bands from './bands';
+import bands from './lists/bands';
+import phrases from './lists/phrases';
 
 function App() {
   const [bandName, setBandName] = useState('');
@@ -17,9 +18,14 @@ function App() {
     const isRock = bands.some(
       (band) => band.toLowerCase() === bandName.toLowerCase().trim()
     );
-    setResult(isRock ? 'É do Rock!' : 'Não é do Rock.');
+    setResult(isRock ? 'eh do roque 😎🤘' : chooseRandomPhrase );
   };
 
+  const chooseRandomPhrase = () => {
+    const randomIndex = Math.floor(Math.random() * phrases.length);
+    return phrases[randomIndex];
+  }
+    
   const handleKeyPress = (event) => {
     if (event.key === 'Enter') {
       checkBand();
@@ -29,7 +35,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Ehdoroque?</h1>
+        <h1>Eh do roque???</h1>
         <div className="search-container">
           <input
             type="text"
@@ -41,7 +47,7 @@ function App() {
           <button onClick={checkBand}>Verificar</button>
         </div>
         {result && (
-          <div className={`result ${result === 'É do Rock!' ? 'rock' : 'not-rock'}`}>
+          <div className={`result ${result === 'eh do roque 😎🤘' ? 'rock' : 'not-rock'}`}>
             {result}
           </div>
         )}
