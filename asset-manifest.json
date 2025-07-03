@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/ehdoroque/static/css/main.b478bf56.css",
+    "main.js": "/ehdoroque/static/js/main.a884352e.js",
+    "static/js/453.4a792feb.chunk.js": "/ehdoroque/static/js/453.4a792feb.chunk.js",
+    "index.html": "/ehdoroque/index.html",
+    "main.b478bf56.css.map": "/ehdoroque/static/css/main.b478bf56.css.map",
+    "main.a884352e.js.map": "/ehdoroque/static/js/main.a884352e.js.map",
+    "453.4a792feb.chunk.js.map": "/ehdoroque/static/js/453.4a792feb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b478bf56.css",
+    "static/js/main.a884352e.js"
+  ]
+}
