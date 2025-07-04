@@ -5,7 +5,10 @@ const bands = [
   'urutau',
   'curva',
   'venus de marte e a tanatose',
-  'tanatose'
+  'tanatose',
+  'venus de marte',
+  'chillsmoke',
+  'chillsmokeⴟ'
 ];
 
 export default bands;
